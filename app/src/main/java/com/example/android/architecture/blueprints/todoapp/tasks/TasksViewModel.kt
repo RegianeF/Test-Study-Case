@@ -30,6 +30,8 @@ import kotlinx.coroutines.launch
 
 /**
  * ViewModel for the task list screen.
+ * https://www.youtube.com/watch?v=k82EQ603mJg&list=PLTihuzC3BWUoxUkwpuqarK3o7YGArKgrX&index=4
+ * https://developer.android.com/codelabs/advanced-android-kotlin-training-testing-basics#2
  */
 class TasksViewModel(application: Application) : AndroidViewModel(application) {
 

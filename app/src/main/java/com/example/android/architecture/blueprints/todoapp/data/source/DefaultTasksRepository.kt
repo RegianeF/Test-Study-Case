@@ -18,6 +18,7 @@ package com.example.android.architecture.blueprints.todoapp.data.source
 import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.room.Room
+import com.example.android.architecture.blueprints.todoapp.R
 import com.example.android.architecture.blueprints.todoapp.data.Result
 import com.example.android.architecture.blueprints.todoapp.data.Result.Success
 import com.example.android.architecture.blueprints.todoapp.data.Task
@@ -113,7 +114,7 @@ class DefaultTasksRepository private constructor(application: Application) {
     /**
      * Relies on [getTasks] to fetch data and picks the task with the same ID.
      */
-    suspend fun getTask(taskId: String,  forceUpdate: Boolean = false): Result<Task> {
+    suspend fun getTask(taskId: String, forceUpdate: Boolean = false): Result<Task> {
         if (forceUpdate) {
             updateTaskFromRemoteDataSource(taskId)
         }
